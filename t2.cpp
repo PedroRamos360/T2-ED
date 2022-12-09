@@ -97,18 +97,6 @@ struct Arvore {
 	}
 
 	// recebe uma lista (vazia) onde insere os elementos da arvore
-	// em pre-ordem
-	bool preOrdem(list<comparador>& saida) {
-		saida.push_back(dado);
-		if (esquerda != nullptr)
-			esquerda->preOrdem(saida);
-		if (direita != nullptr)
-			direita->preOrdem(saida);
-
-		return true;
-	}
-
-	// recebe uma lista (vazia) onde insere os elementos da arvore
 	// em ordem
 	bool emOrdem(list<comparador>& saida) {
 		if (esquerda != nullptr)
